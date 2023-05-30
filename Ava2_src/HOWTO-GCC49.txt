@@ -1,0 +1,14 @@
+// install gcc49
+# pkg install gcc49
+
+// symlink to gcc
+# cd /usr/local/bin
+# ln -s gcc11 gcc
+# ln -s g++49 g++
+
+// fix clang replacement
+# cd /usr/bin
+# mv cc cc2
+# mv c++ c++2
+# ln -s /usr/local/bin/gcc cc
+# ln -s /usr/local/bin/g++ c++
